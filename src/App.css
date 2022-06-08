@@ -59,4 +59,128 @@
   border-radius: 5px;
   background: white;
   color: rgb(117, 117, 117);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.banner {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner-text {
+  font-family: 'Fira Code', calibri;
+
+}
+
+.banner p {
+  font-family: 'Fira Code', calibri;
+}
+
+.add-btn {
+  position: fixed;
+  top: 90%;
+  left: 95%;
+}
+
+.add-btn button {
+  padding: 12px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  background: #000;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: white;
+}
+
+.add-btn span {
+  font-size: 22px;
+}
+
+.empty {
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.empty span {
+  font-size: 80px;
+  color: rgb(212, 212, 212);
+}
+
+.empty h1 {
+  color: rgb(212, 212, 212);
+  font-family: 'Fira Code', calibri;
+}
+
+.heading {
+  font-family: 'Fira Code', calibri;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  min-height: 75vh;
+  position: absolute;
+  top: 12%;
+  left: 35%;
+  width: 30%;
+  padding: 25px;
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  transform: translateY(-120%);
+}
+
+form input {
+  padding: 10px 10px;
+  font-family: 'Fira Code', calibri;
+  outline: none;
+  border: 1px solid rgb(189, 188, 188);
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  height: 25vh;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+}
+
+form input[type=submit] {
+  cursor: pointer;
+  background: dodgerblue;
+  color: white;
+  border: none;
+}
+
+form label {
+  font-family: 'Fira Code', calibri;
+}
+
+::placeholder {
+  font-family: 'Fira Code', calibri;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-slider {
+  transition: .3s all;
+  transform: translateY(0%);
 }
