@@ -9,7 +9,6 @@ import Form from "./components/Form";
 import Overlay from "./components/Overlay";
 import Card from "./components/Card";
 import { useState } from "react";
-
 function App() {
   // To handle array of object[projects]
   const [projects, setProjects] = useState([]);
@@ -50,6 +49,15 @@ function App() {
   const overlayHandler = () => {
     setModalShow(!modalShow);
   };
+  const getCurrentDateAndTime = (separator = "-") => {
+    let newDate = new Date();
+    let date = newDate.getDate();
+    let month = newDate.getMonth() + 1;
+    let year = newDate.getFullYear();
+    return `${year}${separator}${
+      month < 10 ? `0${month}` : `${month}`
+    }${separator}${date}`;
+  };
   const projectRenderer = () => {
     return (
       <div className="cards">
@@ -59,12 +67,14 @@ function App() {
               name={item.project}
               link={item.projectLink}
               desc={item.description}
+              date={getCurrentDateAndTime()}
             />
           );
         })}
       </div>
     );
   };
+
   return (
     <div className="App">
       <Overlay
