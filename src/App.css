@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Roboto:wght@400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Roboto:wght@400;900&display=swap");
 
 * {
   padding: 0%;
@@ -8,7 +8,7 @@
 
 .material-icons {
   vertical-align: -5px;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
@@ -30,12 +30,13 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Support for IE. */
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
 
 .nav-wrap {
   height: 10vh;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .nav {
@@ -49,9 +50,8 @@
 }
 
 .logo h2 {
-  font-family: 'Fira Code', calibri;
+  font-family: "Fira Code", calibri;
 }
-
 
 .btns button {
   padding: 7px 25px;
@@ -60,11 +60,11 @@
   background: black;
   color: rgb(255, 255, 255);
   cursor: pointer;
-  font-family: 'Fira Code', calibri;
+  font-family: "Fira Code", calibri;
 }
 
 .btns button:hover {
-  transition: .2s all;
+  transition: 0.2s all;
   background: white;
   color: black;
 }
@@ -83,12 +83,11 @@
 }
 
 .banner-text {
-  font-family: 'Fira Code', calibri;
-
+  font-family: "Fira Code", calibri;
 }
 
 .banner p {
-  font-family: 'Fira Code', calibri;
+  font-family: "Fira Code", calibri;
 }
 
 .add-btn {
@@ -101,9 +100,12 @@
   padding: 12px;
   border-radius: 100%;
   border: none;
+  border: 1px solid black;
   cursor: pointer;
   background: #000;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   color: white;
 }
 
@@ -127,11 +129,11 @@
 
 .empty h1 {
   color: rgb(212, 212, 212);
-  font-family: 'Fira Code', calibri;
+  font-family: "Fira Code", calibri;
 }
 
 .heading {
-  font-family: 'Fira Code', calibri;
+  font-family: "Fira Code", calibri;
   height: 5vh;
   display: flex;
   align-items: center;
@@ -142,18 +144,19 @@
   position: absolute;
   top: 12%;
   left: 35%;
-  width: 30%;
+  width: 400px;
   padding: 25px;
   background: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 5px;
   transform: translateY(-120%);
   z-index: 5;
+  position: fixed;
 }
 
 form input {
   padding: 10px 10px;
-  font-family: 'Fira Code', calibri;
+  font-family: "Fira Code", calibri;
   outline: none;
   border: 1px solid rgb(189, 188, 188);
   border-radius: 5px;
@@ -167,7 +170,7 @@ textarea {
   padding: 10px;
 }
 
-form input[type=submit] {
+form input[type="submit"] {
   cursor: pointer;
   background: dodgerblue;
   color: white;
@@ -175,11 +178,11 @@ form input[type=submit] {
 }
 
 form label {
-  font-family: 'Fira Code', calibri;
+  font-family: "Fira Code", calibri;
 }
 
 ::placeholder {
-  font-family: 'Fira Code', calibri;
+  font-family: "Fira Code", calibri;
 }
 
 form {
@@ -189,18 +192,75 @@ form {
 }
 
 .form-slider {
-  transition: .3s all;
+  transition: 0.3s all;
   transform: translateY(0%);
 }
-.overlay{
+.overlay {
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0%;
   display: none;
   background: rgba(0, 0, 0, 0.295);
   z-index: 3;
 }
-.show{
+.show {
   display: block;
+}
+.card {
+  height: 35vh;
+  width: 380px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  font-family: "Fira Code", calibri;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.card:hover {
+  border-color: black;
+  transition: 0.2s all;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.info img {
+  height: 50px;
+}
+
+.cards {
+  padding-top: 20px;
+  min-height: 65vh;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.new {
+  color: white;
+  padding: 5px;
+  background: black;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+.new:hover {
+  background: white;
+  color: black;
+  transition: 0.2s all;
+}
+.new-window {
+  position: relative;
+  left: 102%;
+  bottom: 25%;
+}
+.desc {
+  padding-top: 10px;
+}
+.category {
+  padding-top: 20px;
 }
