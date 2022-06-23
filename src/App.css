@@ -5,6 +5,9 @@
   margin: 0%;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 
 .material-icons {
   vertical-align: -5px;
@@ -48,7 +51,14 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 3px 0px;
+  border-radius: 5px;
+}
 .logo h2 {
   font-family: "Fira Code", calibri;
 }
@@ -62,7 +72,14 @@
   cursor: pointer;
   font-family: "Fira Code", calibri;
 }
-
+.btns button a {
+  color: white;
+}
+.btns button a:hover {
+  transition: 0.2s all;
+  background: white;
+  color: black;
+}
 .btns button:hover {
   transition: 0.2s all;
   background: white;
@@ -263,4 +280,38 @@ form {
 }
 .category {
   padding-top: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown .account {
+  padding: 5px 15px;
+  border: 2px solid rgba(30, 143, 255, 0.322);
+  border-radius: 5px;
+}
+.dropdown-content {
+  display: none;
+  left: 40px;
+  position: absolute;
+  background-color: #ffffff;
+  width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-family: "Fira Code";
+  border-radius: 5px;
+  flex-direction: column;
+  z-index: 1;
+}
+.dropdown-content h2 {
+  cursor: pointer;
+  padding: 7px 25px;
+  border-radius: 5px;
+}
+.dropdown-content h2:hover {
+  transition: 0.2s all;
+  background: rgba(0, 0, 0, 0.055);
+}
+.show {
+  display: flex;
 }
