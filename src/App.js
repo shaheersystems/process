@@ -83,8 +83,8 @@ function App() {
       ></Overlay>
       <Navbar />
       <Container>
-        <Banner title="Welcome back Shaheer!!" />
-        <Heading heading="Dashboard" />
+        <Banner title="Welcome back shaheersystems" />
+        <Heading heading="Repositories" />
         {projects.length !== 0 ? projectRenderer() : <Empty />}
         <Form
           showClass={modalShow ? "form-slider" : ""}

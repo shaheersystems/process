@@ -4,7 +4,7 @@ function Empty() {
   return (
     <div className="empty">
       <span className="material-icons">lightbulb</span>
-      <h1>No Project added yet</h1>
+      <h1>No Repositories</h1>
     </div>
   );
 }
